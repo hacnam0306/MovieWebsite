@@ -1,0 +1,146 @@
+$clr-secondary: #4d84c8;
+$clr-wht: #fffcf6;
+.mainBoard {
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  .thumbnail {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .back {
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    top: 16%;
+    left: 10%;
+  }
+  .detail {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    .posterPath {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 20rem;
+      height: 28rem;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+    .slogan {
+      color: #fed54a;
+      text-align: center;
+      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+      font-size: 8rem;
+      font-family: "Syne Mono", monospace;
+      max-width: 80rem;
+    }
+    h1 {
+      letter-spacing: 2px;
+    }
+    .seasons {
+      ul {
+        border-top: 1px solid #ccc;
+        display: flex;
+        width: 50%;
+        padding-top: 3rem;
+        li {
+          font-size: 2rem;
+          margin: 0 2rem;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+  .episodes {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+  }
+  .episodes_container {
+    display: flex;
+    margin-bottom: 1rem;
+    font-family: "Syne Mono", monospace;
+
+    h1 {
+      color: #fed54a;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .episodes_item {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .episodes_page {
+    position: absolute;
+    right: 0;
+    top: 20%;
+  }
+}
+.poster {
+  width: 100%;
+  background-color: rgba(49, 49, 49, 0.8);
+  height: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: center;
+  }
+}
+
+.poster_detail {
+  background-color: rgba(49, 49, 49, 0.8);
+  .poster_text {
+    margin-left: 4rem;
+    transform: translateY(-26%);
+    h2 {
+      font-size: 2rem;
+      font-family: "Syne Mono", monospace;
+      color: #fed54a;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 3.4rem;
+      color: #fff;
+      text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+      letter-spacing: 1.4rem;
+      &:nth-last-child(1) {
+        color: #cfc547;
+
+        text-shadow: 10px 10px 25px rgb(81, 67, 21),
+          -10px 10px 25px rgb(81, 67, 21), -10px -10px 25px rgb(81, 67, 21),
+          10px -10px 25px rgb(81, 67, 21);
+      }
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .swiper {
+    transform: translateY(-20%);
+    padding: 0 3rem 3rem 3rem !important;
+    .swiperSlide {
+      margin-right: 3rem;
+    }
+  }
+}
+.networkLogo {
+  color: red;
+}
+.video {
+  border-radius: 1rem;
+}

@@ -1,0 +1,68 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+* {
+  text-decoration: none !important;
+}
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html {
+  font-size: 48%;
+  font-family: "Lora", serif;
+}
+.App {
+  background: url("https://wallpaperaccess.com/full/862209.jpg") no-repeat
+    center center fixed;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 20%;
+  }
+}
+.active {
+  color: #fff !important;
+  font-weight: bold !important;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+}
+.transparent {
+  background-color: transparent !important;
+  position: fixed !important;
+}
+//@at-root
+.swiper {
+  width: 100%;
+}
+.offcanvas-end {
+  width: 50% !important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
